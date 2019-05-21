@@ -66,7 +66,7 @@ module.exports = {
         'no-useless-catch': 'error',                                                // disallow unnecessary catch clauses
         'no-useless-concat': 'error',                                               // disallow unnecessary concatenation of literals or template literals
         'no-useless-escape': 'off',                                                 // disallow unnecessary escape characters
-        'no-useless-return': 'error',                                               // disallow redundant return statements
+        'no-useless-return': 'off',                                                 // disallow redundant return statements
         'no-void': 'off',                                                           // disallow void operators
         'no-warning-comments': 'warn',                                              // disallow specified warning terms in comments
         'no-with': 'error',                                                         // disallow with statements
