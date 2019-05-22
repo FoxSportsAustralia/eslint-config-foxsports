@@ -83,7 +83,7 @@ module.exports = {
         'no-multi-assign': 'off',                                                                 //  disallow Use of Chained Assignment Expressions
         'no-multiple-empty-lines': ['error', {max: 1}],                                           //  disallow multiple empty lines
         'no-negated-condition': 'error',                                                          //  disallow negated conditions
-        'no-nested-ternary': 'error',                                                             //  disallow nested ternary expressions
+        'no-nested-ternary': 'off',                                                               //  disallow nested ternary expressions
         'no-new-object': 'error',                                                                 //  disallow Object constructors
         'no-plusplus': 'off',                                                                     //  disallow the unary operators ++ and --
         'no-restricted-syntax': 'off',                                                            //  disallow specified syntax
