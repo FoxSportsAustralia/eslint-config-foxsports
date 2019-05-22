@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-foxsports",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "Web developer javascript standards for Kayo & Fox Sports",
   "keywords": [
     "eslint",
