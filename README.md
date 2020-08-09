@@ -23,7 +23,7 @@ Add `foxsports` to the plugins section of your `.eslintrc` configuration file. Y
 
 ```json
 {
-    "plugins": [
+    "extends": [
         "foxsports"
     ]
 }
