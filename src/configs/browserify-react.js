@@ -21,5 +21,6 @@ module.exports = {
         './src/plugin/jsdoc.js',
         './src/plugin/jsx-a11y.js',
         './src/plugin/react.js',
+        './src/plugin/node.js',
     ],
 };

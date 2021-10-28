@@ -50,7 +50,7 @@ module.exports = {
         'no-octal-escape': 'error',                                                 // disallow octal escape sequences in string literals
         'no-param-reassign': 'error',                                               // disallow reassigning function parameters
         'no-proto': 'error',                                                        // disallow the use of the __proto__ property
-        'no-redeclare': 'error',                                                    // disallow variable redeclaration
+        'no-redeclare': ['error', {builtinGlobals: false}],                         // disallow variable redeclaration
         'no-restricted-properties': 'off',                                          // disallow certain properties on certain objects
         'no-return-assign': 'error',                                                // disallow assignment operators in return statements
         'no-return-await': 'off',                                                   // disallow unnecessary return await

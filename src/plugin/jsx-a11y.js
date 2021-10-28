@@ -1,12 +1,11 @@
 /**
- * JSX a11y (v6.2.1)
+ * JSX a11y (v6.4.1)
  *
  * https://github.com/evcohen/eslint-plugin-jsx-a11y
  */
-module.exports = {
+ module.exports = {
     plugins: ['jsx-a11y'],
     rules: {
-        'jsx-a11y/accessible-emoji': 'error',                               // Enforce emojis are wrapped in and provide screenreader access.
         'jsx-a11y/alt-text': 'error',                                       // Enforce all elements that require alternative text have meaningful information to relay back to end user.
         'jsx-a11y/anchor-has-content': 'error',                             // Enforce all anchors to contain accessible content.
         'jsx-a11y/anchor-is-valid': 'error',                                // Enforce all anchors are valid, navigable elements.
@@ -15,6 +14,7 @@ module.exports = {
         'jsx-a11y/aria-proptypes': 'error',                                 // Enforce ARIA state and property values are valid.
         'jsx-a11y/aria-role': 'error',                                      // Enforce that elements with ARIA roles must use a valid, non-abstract ARIA role.
         'jsx-a11y/aria-unsupported-elements': 'error',                      // Enforce that elements that do not support ARIA roles, states, and properties do not have those attributes.
+        'jsx-a11y/autocomplete-valid': 'error',                             // Ensure the autocomplete attribute is correct and suitable for the form field it is used with.
         'jsx-a11y/click-events-have-key-events': 'error',                   // Enforce a clickable non-interactive element has at least one keyboard event listener.
         'jsx-a11y/heading-has-content': 'error',                            // Enforce heading (h1, h2, etc) elements contain accessible content.
         'jsx-a11y/html-has-lang': 'error',                                  // Enforce <html> element has lang prop.

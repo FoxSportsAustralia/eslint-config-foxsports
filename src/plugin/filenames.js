@@ -5,7 +5,7 @@
  *
  * Not overly strict, but ensure you're always lower case, and kebab.
  */
-module.exports = {
+ module.exports = {
     plugins: ['filenames'],
     rules: {
         'filenames/match-regex':    ['error', '^[a-z0-9-]+$'],  // A rule to enforce a certain file naming convention using a regular expression.

@@ -28,6 +28,7 @@ module.exports = {
         'no-inner-declarations': 'error',                                        // disallow variable or function declarations in nested blocks
         'no-invalid-regexp': 'error',                                            // disallow invalid regular expression strings in RegExp constructors
         'no-irregular-whitespace': 'error',                                      // disallow irregular whitespace outside of strings and comments
+        'no-misleading-character-class': 'off',                                  // disallow characters which are made with multiple code points in character class syntax
         'no-obj-calls': 'error',                                                 // disallow calling global object properties as functions
         'no-prototype-builtins': 'off',                                          // disallow calling some Object.prototype methods directly on objects
         'no-regex-spaces': 'error',                                              // disallow multiple spaces in regular expressions

@@ -26,5 +26,6 @@ module.exports = {
         '../plugin/filenames.js',
         '../plugin/import--node.js',
         '../plugin/jsdoc.js',
+        '../plugin/node.js',
     ],
 };
