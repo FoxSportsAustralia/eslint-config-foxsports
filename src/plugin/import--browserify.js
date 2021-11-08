@@ -3,7 +3,7 @@
  *
  * https://github.com/benmosher/eslint-plugin-import
  */
- module.exports = {
+module.exports = {
     plugins: [
         'import',
     ],

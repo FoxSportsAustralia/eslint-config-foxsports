@@ -27,6 +27,7 @@ module.exports = {
         './src/plugin/jsx-a11y.js',
         './src/plugin/react.js',
         './src/plugin/node.js',
+        './src/plugin/react-hooks.js',
     ],
     rules: {
         'max-nested-callbacks':     'off',      // our tests are deep like our love

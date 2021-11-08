@@ -2,10 +2,8 @@
 module.exports = {
     parser: '@babel/eslint-parser',
     parserOptions: {
+        requireConfigFile: false,
         sourceType: 'module',
         allowImportExportEverywhere: false,
-        // babelOptions: {
-        //     configFile: 'path/to/config.js',
-        // },
     },
 };

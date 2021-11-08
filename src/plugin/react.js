@@ -3,7 +3,7 @@
  *
  * https://github.com/yannickcr/eslint-plugin-react
  */
- module.exports = {
+module.exports = {
     plugins: ['react'],
     settings: {
         react: {
@@ -30,7 +30,6 @@
         'react/no-access-state-in-setstate': 'error',                // Prevent using this.state within a this.setState
         'react/no-adjacent-inline-elements': 'off',                  // Prevent adjacent inline elements not separated by whitespace
         'react/no-array-index-key': 'off',                           // Prevent usage of Array index in keys
-        'react/no-arrow-function-lifecycle': 'error',                // Prevent usage of arrow functions for lifecycle methods
         'react/no-children-prop': 'off',                             // Prevent passing children as props
         'react/no-danger': 'error',                                  // Prevent usage of dangerous JSX properties
         'react/no-danger-with-children': 'error',                    // Prevent problem with children and props.dangerouslySetInnerHTML
@@ -51,8 +50,9 @@
         'react/no-unescaped-entities': 'off',                        // Prevent invalid characters from appearing in markup
         'react/no-unknown-property': 'error',                        // Prevent usage of unknown DOM property (fixable)
         'react/no-unsafe': ['error', {checkAliases: true}],          // Prevent usage of unsafe lifecycle methods
-        'react/no-unstable-nested-components': 'error',              // Prevent creating unstable components inside components
-        'react/no-unused-class-component-methods': 'error',          // Prevent declaring unused methods of component class
+        'react/no-unstable-nested-components': ['error', {           // Prevent creating unstable components inside components
+            allowAsProps: true,
+        }],
         'react/no-unused-prop-types': 'error',                       // Prevent definitions of unused prop types
         'react/no-unused-state': 'error',                            // Prevent definitions of unused state
         'react/no-will-update-set-state': 'error',                   // Prevent usage of setState in componentWillUpdate
