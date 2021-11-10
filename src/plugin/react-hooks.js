@@ -15,6 +15,6 @@ module.exports = {
          *  - Hooks are called in the same order on every render.
          */
         'react-hooks/rules-of-hooks': 'error',      // Checks rules of hooks
-        'react-hooks/exhaustive-deps': 'warn',      // Checks effects dependencies
+        'react-hooks/exhaustive-deps': 'error',     // Checks effects dependencies
     },
 };

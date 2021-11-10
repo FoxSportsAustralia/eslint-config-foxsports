@@ -19,7 +19,7 @@ module.exports = {
 
         // New rules
         // Possible Errors
-        'node/no-callback-literal': 'error',                                            // ensure Node.js-style error-first callback pattern is followed
+        'node/no-callback-literal': 'off',                                              // ensure Node.js-style error-first callback pattern is followed
         'node/no-exports-assign': 'error',                                              // disallow the assignment to exports
         'node/no-extraneous-import': 'error',                                           // disallow import declarations which import extraneous modules
         'node/no-extraneous-require': 'error',                                          // disallow require() expressions which import extraneous modules
