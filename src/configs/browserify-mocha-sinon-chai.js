@@ -9,14 +9,6 @@ module.exports = {
         it: true,
         sinon: true,
     },
-    parserOptions: { // even though we plan to use babel-eslint as the parser, eslint currently requires this parserOptions set for some reason
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
-            impliedStrict: true,
-            classes: true,
-        },
-    },
     extends: [
         './src/parser/babel-eslint.js',
         './src/rules/index.js',
@@ -28,6 +20,7 @@ module.exports = {
         './src/plugin/react.js',
         './src/plugin/node.js',
         './src/plugin/react-hooks.js',
+        './src/plugin/codecept.js',
     ],
     rules: {
         'max-nested-callbacks':     'off',      // our tests are deep like our love

@@ -37,7 +37,7 @@ module.exports = {
         'node/shebang': 'error',                                                        // suggest correct usage of shebang
 
         // Best Practices
-        'node/no-deprecated-api': 'warn',                                               // disallow deprecated APIs
+        'node/no-deprecated-api': 'error',                                              // disallow deprecated APIs
 
         // Stylistic Issues
         'node/exports-style': ['error', 'module.exports'],                              // enforce either module.exports or exports
