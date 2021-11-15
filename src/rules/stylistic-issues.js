@@ -13,7 +13,7 @@ module.exports = {
         'camelcase': ['error', {                                                                  // enforce camelcase naming convention
             properties: 'never',
             ignoreDestructuring: true,
-            allow: ['^UNSAFE_'],
+            allow: ['^UNSAFE_', '^[a-zA-Z0-9-]+_{2}[a-zA-Z0-9-]+$'],                             // this regex is to allow JSX naming like SomeComponent__SubComponent
         }],
         'capitalized-comments': 'off',                                                            // enforce or disallow capitalization of the first letter of a comment
         'comma-dangle': ['error', 'always-multiline'],                                            // require or disallow trailing commas

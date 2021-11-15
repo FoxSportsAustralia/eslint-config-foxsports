@@ -19,11 +19,11 @@ $ npm install eslint-config-foxsports --save-dev
 
 ## Usage
 
-Add `foxsports` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `foxsports` to the extends section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-    "plugins": [
+    "extends": [
         "foxsports"
     ]
 }

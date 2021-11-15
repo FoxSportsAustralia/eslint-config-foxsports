@@ -1,5 +1,5 @@
 /**
- * Import Syntax Rules (v2.17.2)
+ * Import Syntax Rules (v2.25.2)
  *
  * https://github.com/benmosher/eslint-plugin-import
  */
@@ -22,7 +22,7 @@ module.exports = {
         'import/no-cycle': 'off',                                               // Ensures that there is no resolvable path back to this module via its dependencies.
         'import/no-useless-path-segments': ['error', {noUselessIndex: true}],   // Use this rule to prevent unnecessary path segments in import and require statements
         'import/no-relative-parent-imports': 'off',                             // Use this rule to prevent imports to folders in relative parent paths
-        'import/no-unused-modules': ['error', {missingExports: true}],          // Report modules without exports, or exports without matching import in another module
+        'import/no-relative-packages': 'off',                                   // Use this rule to prevent import packages through relative paths
 
         /* IMPORT: Helpful warnings */
         'import/export': 'error',                                          // Report any invalid exports, i.e. re-export of the same name
@@ -30,7 +30,8 @@ module.exports = {
         'import/no-named-as-default-member': 'error',                      // Report use of exported name as property of default export
         'import/no-deprecated': 'error',                                   // Report imported names marked with @deprecated documentation tag
         'import/no-extraneous-dependencies': 'error',                      // Forbid the use of extraneous packages
-        'import/no-mutable-exports': 'error',                              // Forbid the use of mutable exports with var or let. (
+        'import/no-mutable-exports': 'error',                              // Forbid the use of mutable exports with var or let.
+        'import/no-unused-modules': ['error', {missingExports: true}],     // Report modules without exports, or exports without matching import in another module
 
         /* IMPORT: Module systems */
         'import/unambiguous': 'error',                                     // Report potentially ambiguous parse goal (script vs. module)
@@ -42,6 +43,7 @@ module.exports = {
                 'url', // browserify
             ],
         }],
+        'import/no-import-module-exports': 'off',                          // Forbid imports with CommonJS exports
 
         /* IMPORT: Style guide */
         'import/first': 'error',                                                // Ensure all imports appear before other statements

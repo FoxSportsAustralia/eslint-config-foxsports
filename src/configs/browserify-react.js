@@ -4,14 +4,6 @@ module.exports = {
         commonjs: true,
         es6: true, // (this automatically sets the ecmaVersion parser option to 6)
     },
-    parserOptions: { // even though we plan to use babel-eslint as the parser, eslint currently requires this parserOptions set for some reason
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
-            impliedStrict: true,
-            classes: true,
-        },
-    },
     extends: [
         './src/parser/babel-eslint.js',
         './src/rules/index.js',
@@ -21,5 +13,7 @@ module.exports = {
         './src/plugin/jsdoc.js',
         './src/plugin/jsx-a11y.js',
         './src/plugin/react.js',
+        './src/plugin/node.js',
+        './src/plugin/react-hooks.js',
     ],
 };
